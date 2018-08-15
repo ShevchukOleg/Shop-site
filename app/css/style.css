@@ -1,0 +1,98 @@
+.ex, .ex1, .ex2 {
+  color: white;
+}
+
+body {
+  color: blue;
+  height: 200px;
+  width: 300px;
+}
+
+input::-moz-placeholder {
+  color: red;
+}
+
+input::-webkit-input-placeholder {
+  color: red;
+}
+
+input::-ms-placeholder {
+  color: red;
+}
+
+input::-webkit-input-placeholder {
+  color: red;
+}
+
+input:-ms-input-placeholder {
+  color: red;
+}
+
+input::-ms-input-placeholder {
+  color: red;
+}
+
+input::placeholder {
+  color: red;
+}
+
+::-moz-selection {
+  color: blue;
+}
+
+::-webkit-selection {
+  color: blue;
+}
+
+::-ms-selection {
+  color: blue;
+}
+
+::selection {
+  color: blue;
+}
+
+@-o-keyframes anim {
+  from {
+    margin-left: 5px;
+  }
+  to {
+    margin-left: 10px;
+  }
+}
+
+@-ms-keyframes anim {
+  from {
+    margin-left: 5px;
+  }
+  to {
+    margin-left: 10px;
+  }
+}
+
+@-moz-keyframes anim {
+  from {
+    margin-left: 5px;
+  }
+  to {
+    margin-left: 10px;
+  }
+}
+
+@-webkit-keyframes anim {
+  from {
+    margin-left: 5px;
+  }
+  to {
+    margin-left: 10px;
+  }
+}
+
+@keyframes anim {
+  from {
+    margin-left: 5px;
+  }
+  to {
+    margin-left: 10px;
+  }
+}
