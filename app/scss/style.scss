@@ -30,83 +30,58 @@
 	width: $width;
 }
 
-@mixin placeholder($color){
-	input::-moz-placeholder {
-		color: $color;
+@mixin placeholder{
+	::-moz-placeholder {
+		@content;
 	}
-	input::-webkit-input-placeholder {
-		color: $color;
+	::-webkit-input-placeholder {
+		@content;
 	}
-	input::-ms-placeholder {
-		color: $color;
+	::-ms-placeholder {
+		@content;
 	}
-	input::placeholder {
-		color: $color;
+	::placeholder {
+		@content;
 	}
 }
 
-@mixin selection($color){
+@mixin selection{
 	::-moz-selection {
-		color: $color;
+		@content
 	}
 	::-webkit-selection {
-		color: $color;
+		@content
 	}
 	::-ms-selection {
-		color: $color;
+		@content
 	}
 	::selection {
-		color: $color;
+		@content
 	}
 }
 
-@mixin keyframes($left , $right){
+@mixin keyframes{
 	@-o-keyframes anim{
-		from {
-			margin-left: $left;
-		}
-		to {
-			margin-left: $right;
-		}
+		@content
 	}
 	@-ms-keyframes anim {
-		from {
-			margin-left: $left;
-		}
-		to {
-			margin-left: $right;
-		}
+		@content
 	}
 	@-moz-keyframes anim {
-		from {
-			margin-left: $left;
-		}
-		to {
-			margin-left: $right;
-		}
+		@content
 	}
 	@-webkit-keyframes anim {
-		from {
-			margin-left: $left;
-		}
-		to {
-			margin-left: $right;
-		}
+		@content
 	}
 	@keyframes anim {
-		from {
-			margin-left: $left;
-		}
-		to {
-			margin-left: $right;
-		}
+		@content
 	}
 }
 
 body{
-	@include blue;
+	@include red;
 	@include h(200px);
-	@include w(300px);
+	@include w(400px);
 }
 
 .ex{
@@ -121,8 +96,14 @@ body{
 	 @extend %color1;
 }
 
-@include placeholder(red);
+@include placeholder{
+	color:black;
+}
 
-@include selection(blue);
+@include selection{
+	color: white;
+}
 
-@include keyframes(5px , 10px);
+@include keyframes{
+	color: red;
+}

@@ -1,98 +1,48 @@
 .ex, .ex1, .ex2 {
-  color: white;
-}
+  color: white; }
 
 body {
-  color: blue;
+  color: red;
   height: 200px;
-  width: 300px;
-}
+  width: 400px; }
 
-input::-moz-placeholder {
-  color: red;
-}
+::-moz-placeholder {
+  color: black; }
 
-input::-webkit-input-placeholder {
-  color: red;
-}
+::-webkit-input-placeholder {
+  color: black; }
 
-input::-ms-placeholder {
-  color: red;
-}
+::-ms-placeholder {
+  color: black; }
 
-input::-webkit-input-placeholder {
-  color: red;
-}
+::-webkit-input-placeholder {
+  color: black; }
 
-input:-ms-input-placeholder {
-  color: red;
-}
+:-ms-input-placeholder {
+  color: black; }
 
-input::-ms-input-placeholder {
-  color: red;
-}
+::-ms-input-placeholder {
+  color: black; }
 
-input::placeholder {
-  color: red;
-}
+::placeholder {
+  color: black; }
 
 ::-moz-selection {
-  color: blue;
-}
+  color: white; }
 
 ::-webkit-selection {
-  color: blue;
-}
+  color: white; }
 
 ::-ms-selection {
-  color: blue;
-}
+  color: white; }
 
 ::selection {
-  color: blue;
-}
-
-@-o-keyframes anim {
-  from {
-    margin-left: 5px;
-  }
-  to {
-    margin-left: 10px;
-  }
-}
-
-@-ms-keyframes anim {
-  from {
-    margin-left: 5px;
-  }
-  to {
-    margin-left: 10px;
-  }
-}
-
-@-moz-keyframes anim {
-  from {
-    margin-left: 5px;
-  }
-  to {
-    margin-left: 10px;
-  }
-}
+  color: white; }
 
 @-webkit-keyframes anim {
-  from {
-    margin-left: 5px;
-  }
-  to {
-    margin-left: 10px;
-  }
-}
+  color: red; }
 
 @keyframes anim {
-  from {
-    margin-left: 5px;
-  }
-  to {
-    margin-left: 10px;
-  }
-}
+  color: red; }
+
+/*# sourceMappingURL=style.css.map */
