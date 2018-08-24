@@ -1,0 +1,36 @@
+.shopping-cart{
+    background-color: $gray-100;
+    transform: rotate(45deg);
+    border-radius: 50%;
+    
+}
+
+.shopping-cart:hover{
+    cursor: pointer;
+    background-color: $gray-300;
+    transition: 0.3s;
+    
+}
+
+.fa-shopping-cart{
+    transform: rotate(-45deg);
+    color: $gray-600;
+    
+}
+
+.toBuy{
+    transform: rotate(-45deg) translateX(-50%);
+    background-color: $secondary;
+    bottom: 90%;
+    border-radius: 50%;
+    font-size: 11px;
+    color: $white;
+    
+}
+
+.fa-search{
+    left: 95%;
+    bottom: 35%;
+    color: $gray-900;
+    
+}

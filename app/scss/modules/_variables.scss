@@ -1,14 +1,60 @@
-// Color System
+// color-system
+
 $primary: #8bc34a;
 $secondary: #e74c3c;
-$dark: #263238;
+$gray-100: #e4e4e4;
+$gray-900: #263238;
+$gray-400: #90a4ae;
 
+//font
 
-//Fonts
 $font-family-sans-serif: 'Roboto', sans-serif;
 
+//buttons
 
-//Buttons
-$btn-padding-y-lg: 15px;
-$btn-padding-x-lg: 30px;
-$font-size-lg: 15;
+$font-size-lg: 0.95rem;
+$btn-padding-y-lg: 5px; 
+$btn-padding-x-lg: 15px;
+
+//spaces
+
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),
+    2: ($spacer * .5),
+    3: $spacer,
+    4: ($spacer * 1.5),
+    5: ($spacer * 3),
+    450: 19rem,
+    15: 15px,
+    20: 20px,
+    14: 14rem,
+    45: 45px,
+    155: 155px,
+    30: 30px,
+    25: 25px
+  ),
+  $spacers
+);
+
+//sizes
+
+$sizes: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: map-merge(
+  (
+    25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    45: 45%,
+    35: 35px,
+    16: 16px,
+    auto: auto
+  ),
+  $sizes
+);
