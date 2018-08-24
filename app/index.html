@@ -1,26 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/style.scss">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/et-line.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
 </head>
 <body>
-	<div class="container">
-		<div class="row">
-			<div class="col-sm">
-				<div class="btn btn-primary btn-lg">Buttons</div>
-				<div class="btn btn-secondary btn-lg">Buttons</div>
-			</div>
-			<div class="col-sm">
-				<div class="btn btn-dark btn-lg">Button</div>
-			</div>
-			<div class="col-sm">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam similique repellat amet doloremque cum aliquam repudiandae pariatur culpa adipisci nihil vel itaque consectetur quam, veritatis facere ducimus deleniti error distinctio!</p>
-			</div>
-		</div>
-	</div>
-
+<header>
+    <section class="pt-4 pb-4">
+       <div class="container d-flex">
+        <div class="col-lg-2 mr-xl-450 mr-lg-14">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="col-lg-4 col-md-4 d-flex align-items-center justify-content-center">
+            <p class="text-center text-lg-left">
+            <span class="text-secondary">Need help?</span> Talk to an expert: +61 3 8376 6284 
+            </p>
+           </div>
+           <div class="shopping-cart d-flex align-items-center w-35 h-35 p-3 d-flex justify-content-center mr-lg-15 position-relative">
+                <div class="position-absolute toBuy w-16 h-16 d-flex justify-content-center align-items-center">8</div>
+                <i class="fa fa-shopping-cart"></i>
+            </div>
+           <div class="col-lg-3">
+            <a href="#" class="btn btn-primary btn-lg">Login</a>
+            <a href="#" class="btn btn-secondary btn-lg ml-lg-3">Register</a>
+           </div>
+           </div>
+    </section>
+    <section class="navbar py-lg-20">
+      <div class="container">
+       <nav class="d-flex justify-content-center">
+        <a href="#" class="nav-item pr-xl-45 pl-15">Home</a>
+        <a href="#" class="nav-item pr-xl-45">About</a>
+        <a href="#" class="nav-item pr-xl-45">Wordpress</a>
+        <a href="#" class="nav-item pr-xl-45">Joomla</a>
+        <a href="#" class="nav-item pr-xl-45">PSD</a>
+        <a href="#" class="nav-item pr-xl-45">Plugins</a>
+        <a href="#" class="nav-item pr-xl-45">Components</a>
+        <a href="#" class="nav-item pr-xl-45">Pages</a>
+        <a href="#" class="nav-item pr-xl-45">Conctact</a>
+        <a href="#" class="nav-item pr-xl-45">Help</a>
+        </nav>
+        </div>
+    </section>
+    <section class="shape-1 py-xl-155 d-flex flex-column justify-content-center align-items-center">
+       <h1 class="text-center font-weight-bold pb-xl-30">Welcome To Foxtar Market Place</h1>
+       <h3 class="text-center pb-xl-45">Premium WordPress Themes, Web Templates and Many More ...</h3>
+       <div class="position-relative w-45">
+       <input type="search" class="py-25 form-control" placeholder="Search Your Keywords ...">
+       <i class="fa fa-search position-absolute"></i>
+       </div>
+    </section>
+    
+</header>
 </body>
 </html>
