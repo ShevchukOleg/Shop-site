@@ -9,6 +9,10 @@ $gray-400: #90a4ae;
 //font
 
 $font-family-sans-serif: 'Roboto', sans-serif;
+$font-size-my-xl: 48px;
+$font-size-my-lg: 20px;
+$font-size-my-md: 14px;
+$font-size-my-xs: 11px;
 
 //buttons
 
@@ -29,7 +33,7 @@ $spacers: map-merge(
     3: $spacer,
     4: ($spacer * 1.5),
     5: ($spacer * 3),
-    450: 19rem,
+    450: 17rem,
     15: 15px,
     20: 20px,
     14: 14rem,
