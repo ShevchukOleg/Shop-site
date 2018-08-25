@@ -32,7 +32,7 @@ gulp.task('sass', function(){
 	.pipe(sourcemaps.write('.'))
 	.pipe(gulp.dest('app/css'))
 	.pipe(browserSync.reload({stream: true}))
-	.pipe(notify('SCSS complete'))
+	.pipe(notify({message:'SCSS complete', onLast: true}));
 });
 
 gulp.task('browser-sync', function(){
@@ -57,11 +57,11 @@ gulp.task('clean', function() {
     return del.sync('dist'); // Удаляем папку dist перед сборкой
 });
 
-gulp.task('build', ['clean', 'sass', 'scripts'], function() {
+gulp.task('build', ['clean', 'sass'], function() {
 
     var buildCss = gulp.src([ // Переносим библиотеки в продакшен
-        'app/css/main.css',
-        'app/css/libs.min.css'
+        'app/css/style.css',
+        'app/css/style.css.map'
         ])
     .pipe(gulp.dest('dist/css'))
 
@@ -76,11 +76,11 @@ gulp.task('build', ['clean', 'sass', 'scripts'], function() {
 
 });
 
-gulp.task('build', ['sass', 'scripts'], function() {
+gulp.task('build', ['sass'], function() {
 
     var buildCss = gulp.src([ // Переносим CSS стили в продакшен
-        'app/css/main.css',
-        'app/css/libs.min.css'
+        'app/css/style.css',
+        'app/css/style.css.map'
         ])
     .pipe(gulp.dest('dist/css'))
 

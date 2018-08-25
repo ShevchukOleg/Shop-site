@@ -1,0 +1,16 @@
+.navbar{
+    font-size: 0.875rem;
+    
+}
+
+.nav-item{
+    color: $white;
+    
+}
+
+.nav-item:hover{
+    text-decoration: none;
+    color: $gray-500;
+    transition: 0.2s;
+    
+}
