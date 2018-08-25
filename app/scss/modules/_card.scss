@@ -1,9 +1,15 @@
 .card{
 	border-radius: 0;
+	transition: 0.3s;
 	&-body{
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+	}
+
+	&:hover{
+			box-shadow: 0px 18px 25px 0px rgba(220, 220, 220, 0.7);
+		    transition: 0.3s;
 	}
 	
 	&-footer{
