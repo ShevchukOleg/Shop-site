@@ -32,6 +32,7 @@ $headings-color: $dark;
 
 $headings-4-font-weight: bold;
 //Buttons
+
 $btn-padding-y-lg: 5px;
 $btn-padding-x-lg: 15px;
 $font-size-lg: 0.9375rem;
@@ -47,9 +48,13 @@ $spacers: map-merge(
 		3: $spacer,
 		4: ($spacer * 1,5),
 		5: ($spacer * 3),
-	),
+		30: 30px,
+		60: 60px,
+		120: 120px,
+		170: 170px,
+		),
 	$spacers
-);
+	);
 
 
 
