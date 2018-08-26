@@ -1,0 +1,25 @@
+.navbar{
+    font-size: 0.875rem;
+    
+}
+
+.nav-item{
+    color: $white;
+    font-size: 24px;
+    
+}
+
+@media (min-width: 992px){
+    .nav-item{
+        font-size: 14px;
+        
+    }
+    
+}
+
+.nav-item:hover{
+    text-decoration: none;
+    color: $gray-500;
+    transition: 0.2s;
+    
+}
